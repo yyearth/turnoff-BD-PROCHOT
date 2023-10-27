@@ -9,7 +9,7 @@ In order to restore the CPU back to full speed, can just clear the BD PROCHOT si
 The register address of BD PROCHOT signal bit on CPU is 0x1FC. The bit[0] is the signal sign. So on Linux, the solution is use `msr-tool` to write the bit[0] to 0. the step is following:
 
 ```shell
-sudo apt install msr-tool
+sudo apt install msr-tools
 sudo modprobe msr
 ```
 
